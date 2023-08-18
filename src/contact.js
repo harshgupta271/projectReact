@@ -1,4 +1,3 @@
-import Feedback from "react-bootstrap/esm/Feedback";
 import Bar from "./bar";
 const Contact = () => {
     return ( 
