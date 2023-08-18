@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.rang {
+  background-color: #f79f92 !important;
+}
+
+.main {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  flex-direction: unset;
+  background-color: rgb(237, 231, 208);
+}
+
+.in {
+  width: 90% !important;
+}
+
+.card {
+  margin: 3%;
+  width: 25%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  height: 320px !important;
+}
+
+.card:hover {
+  background-color: #f79F92;
+}
+
+.cake {
+  width: 95% !important;
+}
+
+button {
+  background-color: pink !important;
+}
+
+.scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background-color: #f79F92;
+  border-radius: 4px;
+}
+
+.icon-container {
+  display: inline-block;
+  position: relative;
+}
+
+.icon-text {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f0f0f0;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.icon-container:hover .icon-text {
+  display: block;
+}
+
+.small {
+  display: none;
+}
+.cart-count {
+  position: absolute;
+  top: -8px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 4px 8px;
+  font-size: 8px;
+}
+.go-to-cart {
+  display: none;
+}
+ul{
+  list-style: none;
+  font-weight: bold ;
+}
+.total{
+  font-weight: bold;
+}
+.form-container {
+  width: 50%; 
+  margin: 0 auto; 
+}
+@media (max-width: 780px) {
+  .mycard {
+    background-color: #f79F92 !important;
+  }
+
+  .icon-container {
+    display: none;
+  }
+
+  .small {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    background-color: gainsboro;
+  }
+
+  .small .icon-container {
+    display: block;
+    margin: 5px;
+    margin-right: 10px;
+  }
+  
+  .go-to-cart {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    left: 5%;
+    width: 90%;
+    background-color: #f8f8f8;
+    padding: 10px;
+    text-align: center;
+    z-index: 999;
+    background-color: #f79F92;
+    border-radius: 40px;
+  }
+
+  .go-to-cart-link {
+    text-decoration: none;
+    color: #333;
+  }
+
+  .cart-summary {
+    margin-top: 5px;
+  }
+  .form-container {
+    width: 90%;
+  }
+
+}
